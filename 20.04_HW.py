@@ -46,7 +46,7 @@ add_order ={}
 for order_num, orders_data in orders.items():
     users_id = orders_data['user_id']
     add_order[order_num] = users_id
-# print(add_order) # проверяем наличие созданного словаря
+
 def count_list_id(list_users_id):
     count_users_id = {}
     for item in list_users_id:
@@ -54,7 +54,7 @@ def count_list_id(list_users_id):
     return count_users_id
 list_users_id = list(add_order.values())
 count_list_id(list_users_id)
-# print(count_list_id(list_users_id)) # проверяем работу функции, есть ли словарь с посчитанными вхождениями
+
 max_users_id = count_list_id(list_users_id)
 max_user_result = max(max_users_id, key = max_users_id.get)
 print(f'4. Пользователь с id_номером {max_user_result} сделал самое большое количество заказов')
@@ -65,7 +65,7 @@ for order_num, orders_data in orders.items():
     cost = orders_data['quantity'] * orders_data['price']
     users_id = orders_data['user_id']
     big_sum_price[users_id] = cost
-# print(big_sum_price)
+
 # Ищем пользователя с максимальной суммарной стоимостью
 if users_id in big_sum_price:
     big_sum_price[users_id] = 0
@@ -78,11 +78,9 @@ order_num_price = {}
 for order_num, orders_data in orders.items():
     price = orders_data['price']
     order_num_price[order_num] = price
-# print(order_num_price)
+
 s_price = sum(order_num_price.values())
-# print(s_price)
 count_order_num = len(orders)
-# print(count_order_num)
 average_amount = s_price / count_order_num
 print(f'6. Средняя стоимость заказа в июле была: {average_amount}')
 
@@ -92,7 +90,6 @@ for order_num, orders_data in orders.items():
     price = orders_data['price']
     quantity = orders_data['quantity']
     quantity_price[quantity] = price
-# print(quantity_price) # проверяем наличие словаря quantity_price
 count_quantity = sum(quantity_price.keys())
 count_price = sum(quantity_price.values())
 average_price = count_price / count_quantity
