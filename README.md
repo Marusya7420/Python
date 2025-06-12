@@ -24,7 +24,7 @@
 
     2.1 Сборка кода
    
-   Загрузите файл или скопируйте код в PyCharm
+   Загрузите файл 23.2_Parsing_bileter.py или скопируйте код в PyCharm
    
    Импортируйте библиотеки: requests, BeautifulSoup модуль bs4, pandas модуль pd, lxml
 
