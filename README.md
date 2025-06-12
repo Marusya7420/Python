@@ -24,11 +24,13 @@
     2.1 Сборка кода
    
    Загрузите файл или скопируйте код в PyCharm
+   
    Импортируйте библиотеки: requests, BeautifulSoup модуль bs4, pandas модуль pd, lxml
 
     2.2 Запуск кода
    
    Запустите код
+   
    Когда код отработает в среду PyCharmProjects будет выгружен Excel-файл price_performance.xlsx
  
 
